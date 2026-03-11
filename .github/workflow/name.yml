@@ -1,0 +1,19 @@
+# this is name of workflow
+name: Vikas Rajput
+#runs on a trigger
+on:
+  push:
+    branches: [main]
+# these are the jobs inside the workflow
+jobs:
+
+# this is name of jobs
+  greets:
+  # this is github runner, each job runs on a runner
+    run-on: ubuntu-latest
+    steps:
+      - name: my name is Vikas Rajput
+        run: echo "Hello dosto"
+
+      - name: I am belongs from Rajput family
+        run: echo "Rajput Family"
