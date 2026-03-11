@@ -1,5 +1,5 @@
 # this is workflow name
-name: Hello workflow
+name: Hello Vikas
 
 on:
   push:
@@ -15,6 +15,6 @@ jobs:
       - name: say hello to dosto
         run: echo "hello dosto"
 
-      - name: say hello to username
+      - name: say hello to Vikas
         run: echo "hello $USER"
       
