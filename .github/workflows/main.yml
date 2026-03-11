@@ -9,7 +9,7 @@ jobs:
 # this is name of jobs
   greets:
   # this is github runner, each job runs on a runner
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: my name is Vikas Rajput
         run: echo "Hello dosto"
