@@ -1,4 +1,4 @@
-name: CICD
+name: CI/CD
 on:
   workflow_dispatch:
     inputs:
@@ -30,6 +30,7 @@ jobs:
       - name: test the container
         run: echo "resting the container"
   deploy:
+    if: inputs.environment == 'dev'
     needs: [build,test]
     runs-on: ubuntu-latest
     steps:
