@@ -16,3 +16,8 @@ jobs:
 
       - name: I am belongs from Rajput family
         run: echo "Rajput Family"
+  details:
+    runs-on: ubuntu-latest
+    steps:
+     - name: show the version of python, docker
+       run: docker --version && python --version
