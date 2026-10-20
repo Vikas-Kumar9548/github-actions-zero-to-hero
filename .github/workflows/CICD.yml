@@ -1,0 +1,30 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+jobs:
+
+  code:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout code
+      run: echo "checkout code"
+      
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: build code
+      run: echo "build docker image"
+      
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test code
+      run: echo "run container"
+      
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: deploy container on ec2
+      run: echo "running docker compose"
+  
